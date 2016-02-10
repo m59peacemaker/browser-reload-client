@@ -1,0 +1,47 @@
+{
+  "name": "@m59/reload-client",
+  "version": "1.0.0",
+  "description": "Client-side script to respond to signals from @m59/reload-server. Can reload the page and refresh css and images.",
+  "keywords": [
+    "development",
+    "dev",
+    "live",
+    "page",
+    "reload",
+    "refresh",
+    "css",
+    "images",
+    "img"
+  ],
+  "author": {
+    "name": "Johnny Hauser",
+    "email": "johnnyhauser@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m59peacemaker/browser-reload-client"
+  },
+  "license": "VOL",
+  "main": "index.js",
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-2"
+    ]
+  },
+  "dependencies": {
+    "uuid-v4": "^0.1.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.5.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "babelify": "^7.2.0",
+    "mock-socket": "^2.0.0",
+    "tape": "^4.4.0"
+  }
+}
