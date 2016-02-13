@@ -1,6 +1,6 @@
 {
   "name": "@m59/reload-client",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Client-side script to respond to signals from @m59/reload-server. Can reload the page and refresh css and images.",
   "keywords": [
     "development",

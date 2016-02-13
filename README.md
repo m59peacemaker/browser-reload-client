@@ -13,10 +13,12 @@ Client(reloadServerUrl)
 
 ## JS API
 
-### Client(reloadServerUrl)
+### Client(reloadServerUrl, options)
 
 Makes a websocket connection to the given url to listen for reload messages.
 
+- `options: object`
+  - `quiet: boolean, false` disable logging to console
 - **returns**: `object`
   - socket: the WebSocket
   - ...helpers
