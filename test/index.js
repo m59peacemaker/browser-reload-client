@@ -11,9 +11,11 @@ test('refreshCSS adds cache buster to stylesheet url', t => {
     mockServer.send(JSON.stringify({
       type: 'refreshCSS'
     }))
-    mockServer.send(JSON.stringify({
-      type: 'refreshCSS'
-    }))
+    setTimeout(() => {
+      mockServer.send(JSON.stringify({
+        type: 'refreshCSS'
+      }))
+    }, 100)
   })
   let link = document.createElement('link')
   link.rel = 'stylesheet'
@@ -44,9 +46,11 @@ test('refreshImages adds cache buster to img src', t => {
     mockServer.send(JSON.stringify({
       type: 'refreshImages'
     }))
-    mockServer.send(JSON.stringify({
-      type: 'refreshImages'
-    }))
+    setTimeout(() => {
+      mockServer.send(JSON.stringify({
+        type: 'refreshImages'
+      }))
+    }, 100)
   })
   let img = document.createElement('img')
   img.src = '/foo.jpg'
